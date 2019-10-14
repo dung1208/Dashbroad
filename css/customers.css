@@ -225,6 +225,9 @@ body {
     height: 70px;
  
 }
+#table-information>tbody>tr>td{
+    padding-top: 25px;
+}
 #table-information>thead>tr>th:first-child{
     width: 240px;
     padding-left: 40px;
@@ -237,6 +240,7 @@ body {
 }
 #table-information>tbody>tr>td:first-child{
     padding-left: 40px;
+    color: #0055FF;
 }
 #table-information>thead>tr>th:nth-child(4){
     width: 300px;

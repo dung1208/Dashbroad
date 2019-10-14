@@ -14,3 +14,18 @@
         modalAddCustomer.style.display = "none";
       }
     }
+
+
+    var modalDelete = document.getElementById("mymodalDelete");
+   
+ var btnDelete = document.getElementsByClassName("btnDelete");
+ for( let i = 0; i < btnDelete.length; i++){
+        btnDelete[i].onclick = function() {
+             modalDelete.style.display = "block";
+             window.onclick = function(event) {
+                if (event.target == modalDelete) {
+                     modalDelete.style.display = "none";
+                    }
+                 }
+            }
+    }

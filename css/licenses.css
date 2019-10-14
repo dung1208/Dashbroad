@@ -235,6 +235,9 @@ body {
 #table-information>thead>tr>th:nth-child(2){
     width: 350px;
 }
+#table-information>tbody>tr>td{
+    padding-top: 25px;
+}
 #table-information>tbody>tr>td:first-child,#table-information>tbody>tr>td:last-child{
     text-align: center;
 }
@@ -247,7 +250,14 @@ body {
     cursor: pointer;
 }
 
+/*color text*/
+#table-information>tbody>tr>td:nth-child(3){
+color: #0055FF;
+}
 
+
+
+/*dropdown*/
 .dropdown-menu.action{
     margin-right: 105px;
 }

@@ -1,4 +1,4 @@
-
+/* modal template */
     .modal-template {
       display: none; /* Hidden by default */
       position: fixed; /* Stay in place */
@@ -102,6 +102,7 @@
 .element-btn-modal:last-child{
   background-color: rgb(126, 126, 126);
 }
+
    /* The modalAddLicense */
   
    .modalAddLicense{
@@ -135,4 +136,60 @@
 .element-modalAddLicense-right{
   font-size: 20px;
   height: 70px;
+}
+.license-key-modalAddLicense{
+  color: #B5B5B5;
+}
+.checkbox-license-term{
+  margin-top: 20px;
+}
+.checkbox-license-term>label{
+  padding: 10px;
+  cursor: pointer;
+}
+.list-customer-modalAddLicense{
+  width: 206px;
+  height: 40px;
+  outline: none;
+  border-radius: 3px ;
+  border: 1px solid rgb(186, 186, 186,0.7);
+}
+
+/* modal delete*/
+.modalDelete{
+  padding-top: 280px;
+}
+.modalDelete-content{
+  height: 520px;
+  width: 760px;
+}
+.modalDelete-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.modalDelete-header>div{
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.modalDelete-header>div>i{
+  color: red;
+  /* height: 100px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  transform: scale(6);
+}
+.modalDelete-header>h2{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.text-modalDelete{
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
 }
