@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/licenses.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-element">
+                <a href="#" class="dashboard">
+                    <img src="img/dashboard.png" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="nav-element">
+                <a href="licenses.html" class="licenses">
+                    <img src="img/license.png" alt="">
+                    <span>Licenses</span>
+                </a>
+            </div>
+            <div class="nav-element">
+                <a href="customers.html" class="customers">
+                    <img src="img/customer.png" alt="">
+                    <span>Customers</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="header-left">
+                <div class="licenses-list">
+                    <span>Licenses List</span>
+                    <a href="#"  id="btnAddLicense"><img src="img/add.png" alt=""></a>
+                </div>
+                <div class="license-status">
+                        <ul class="status">
+                                <li class="status-item">
+                                  <a  href="#" > <span>All</span>(3)</a>
+                                </li>
+                                <li class="status-item">
+                                  <a  href="#"> <span>Active</span>(0)</a>
+                                </li>
+                                <li class="status-item">
+                                  <a href="#"> <span>Inactive</span>(3)</a>
+                                </li>
+                                <li class="status-item">
+                                 <a  href="#"> <span>Expire</span>(0)</a>
+                                </li>
+                                <li class="status-item">
+                                    <a  href="#"> <span>Disable</span>(0)</a>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="btn-header-right">
+                    <button class="btn-admin">Admin</button>
+                    <button class="btn-logout">Log out</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <img src="img/search.png" alt="" class="search-icon">
+                </div>
+            </div>
+        </div>
+        <div class="display-informations">
+            <div class="display">
+                <div>
+                    <table class=" table" id="table-information">
+                            <thead>
+                              <tr>
+                                <th>No</th>
+                                <th>Key</th>
+                                <th>Customer</th>
+                                <th>Activation</th>
+                                <th>Expired</th>
+                                <th>Purchased</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td >1</td>
+                                <td>66aa7523flaa0d5fa99806 967868e4cd<span>-inactive</span></td>
+                                <td>Tan le</td>
+                                <td><span>Yes</span>/No</td>
+                                <td>Jan 31,2019</td>
+                                <td>Jan 31,2019</td>
+                                <td>
+                                     <div class="dropdown">  
+                                    <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                    <div class="dropdown-menu action">
+                                            <a class="dropdown-item" href="#">View Licenses</a>
+                                            <a class="dropdown-item" href="#">Re-New</a>
+                                            <a class="dropdown-item" href="#">Edit</a>
+                                            <a class="dropdown-item" href="#">Disable</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Delete</a>
+
+                                          </div>
+                                        </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                    <td >2</td>
+                                    <td>66aa7523flaa0d5fa99806 967868e4cd<span>-inactive</span></td>
+                                    <td>Peter</td>
+                                    <td><span>Yes</span>/No</td>
+                                    <td></td>
+                                    <td>Jan 31,2019</td>
+                                    <td>                <div class="dropdown">  
+                                            <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                            <div class="dropdown-menu action">
+                                                    <a class="dropdown-item" href="#">View Licenses</a>
+                                                    <a class="dropdown-item" href="#">Re-New</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+        
+                                                  </div>
+                                                </div>
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                        <td >3</td>
+                                        <td>66aa7523flaa0d5fa99806 967868e4cd<span>-inactive</span></td>
+                                        <td>Dany</td>
+                                        <td><span>Yes</span>/No</td>
+                                        <td></td>
+                                        <td>Jan 31,2019</td>
+                                        <td>                <div class="dropdown">  
+                                                <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                                <div class="dropdown-menu action">
+                                                        <a class="dropdown-item" href="#">View Licenses</a>
+                                                        <a class="dropdown-item" href="#">Re-New</a>
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Disable</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+            
+                                                      </div>
+                                                    </div>
+                                                </td>
+                                    </tr>
+                                    <tr>
+                                            <td >1</td>
+                                            <td>66aa7523flaa0d5fa99806 967868e4cd<span>-expired</span></td>
+                                            <td>LyLy</td>
+                                            <td><span>Yes</span>/No</td>
+                                            <td>Jan 31,2019</td>
+                                            <td>Jan 31,2019</td>
+                                            <td>                <div class="dropdown">  
+                                                    <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                                    <div class="dropdown-menu action">
+                                                            <a class="dropdown-item" href="#">View Licenses</a>
+                                                            <a class="dropdown-item" href="#">Re-New</a>
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Disable</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                
+                                                          </div>
+                                                        </div>
+                                                    </td>
+                                          </tr>
+                                          <tr>
+                                                <td >1</td>
+                                                <td>66aa7523flaa0d5fa99806 967868e4cd<span>-inactive</span></td>
+                                                <td>Tan le</td>
+                                                <td><span>Yes</span>/No</td>
+                                                <td>Jan 31,2019</td>
+                                                <td>Jan 31,2019</td>
+                                                <td>                <div class="dropdown">  
+                                                        <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                                        <div class="dropdown-menu action">
+                                                                <a class="dropdown-item" href="#">View Licenses</a>
+                                                                <a class="dropdown-item" href="#">Re-New</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Disable</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                    
+                                                              </div>
+                                                            </div>
+                                                        </td>
+                                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    <div class="pagination-page-main">
+                            <ul class="pagination-numbers">
+                                <li><i class="fas fa-angle-left angle-pagination"></i></li>   
+                                    <li class="number-pagination-page"><a href="#">1</a></li>
+                                    <li class="number-pagination-page"><a href="#">2</a></li>
+                                    <li class="number-pagination-page"><a href="#">3</a></li>
+                                <li><i class="fas fa-angle-right angle-pagination"></i></li>   
+
+                                  </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The modalAddLicense -->
+  <div id="mymodalAddLicense" class="modalAddLicense modal-template">
+    <!-- modalAddLicense content -->
+    <div class="modalAddLicense-content modal-template-content">
+      <div class="modalAddLicense-header modal-header-template">
+        <h2>GENARATE LICENSE</h2>
+      </div>
+      <div class="element-modalAdd-license">
+          <div class="modalAddLicense-left">
+                <span>License key:</span>
+                <span>Purchased Date:</span>
+                <span>License Term:</span>
+                <span>Expiration Date:</span>
+                <span>Customer:</span>
+          </div>
+          <div class="modalAddLicense-right">
+            <span class="element-modalAddLicense-right">66aa7523flaa0d5fa99806967868e4cd</span>
+            <input class="element-modalAddLicense-right" type="date">
+            <div class="checkbox-license-term element-modalAddLicense-right">
+               <label for=""><input type="radio" name="licenseTerm">6 months</label> 
+               <label for=""><input type="radio" name="licenseTerm">12 months</label> 
+               <label for=""><input type="radio" name="licenseTerm">24 months</label> 
+            </div>
+            <span class="element-modalAddLicense-right">July 31,2019</span>
+            <select name="" id="" class="element-modalAddLicense-right">
+                <option value="">Tan Le</option>
+                <option value="">Perter</option>
+                <option value="">Dany</option>
+                <option value="">Lyly</option>
+
+            </select>
+          </div>
+      </div>
+      <div class="modalAddLicense-btn modal-btn">
+        <button class="btn-add-license element-btn-modal">Confirm</button>
+        <button class="btn-add-license element-btn-modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="modalLicense.js"></script>
+</body>
+
+</html>

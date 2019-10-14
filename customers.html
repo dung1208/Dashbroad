@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/customers.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-element">
+                <a href="#" class="dashboard">
+                    <img src="img/dashboard.png" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="nav-element">
+                <a href="licenses.html" class="licenses">
+                    <img src="img/license.png" alt="">
+                    <span>Licenses</span>
+                </a>
+            </div>
+            <div class="nav-element">
+                <a href="customers.html" class="customers">
+                    <img src="img/customer.png" alt="">
+                    <span>Customers</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="header-left">
+                <div class="licenses-list">
+                    <span>Customers List</span>
+                    <a href="#" id="btnAddCustomer"><img src="img/add.png" alt=""></a>
+                </div>
+                <div class="license-status">
+                        <ul class="status">
+                                <li class="status-item">
+                                  <a  href="#" > <span>All</span>(4)</a>
+                                </li>
+                                <li class="status-item">
+                                  <a  href="#"> <span>Active</span>(4)</a>
+                                </li>
+                                <li class="status-item">
+                                  <a href="#"> <span>Inactive</span>(0)</a>
+                                </li>
+                                <li class="status-item">
+                                 <a  href="#"> <span>Suspended</span>(0)</a>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="btn-header-right">
+                    <button class="btn-admin">Admin</button>
+                    <button class="btn-logout">Log out</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <img src="img/search.png" alt="" class="search-icon">
+                </div>
+            </div>
+        </div>
+        <div class="display-informations">
+            <div class="display">
+                <div>
+                    <table class=" table" id="table-information">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Phone number</th>
+                                <th>Address</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td >Le Xuan Tan</td>
+                                <td>1257982abc</td>
+                                <td>0986878889</td>
+                                <td>6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam</td>
+                                <td>tanlx@acaziasoft.com</td>
+                                <td>
+                                     <div class="dropdown">  
+                                    <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                    <div class="dropdown-menu action">
+                                            <a class="dropdown-item" href="#" >View Profile</a>
+                                            <a class="dropdown-item" href="#">Edit</a>
+                                            <a class="dropdown-item" href="#">Generate license</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Delete</a>
+
+                                          </div>
+                                        </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                    <td >Le Xuan Tan</td>
+                                    <td>1257982abc</td>
+                                    <td>0986878889</td>
+                                    <td>6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam</td>
+                                    <td>tanlx@acaziasoft.com</td>
+                                    <td>     
+                                                                             <div class="dropdown">  
+                                            <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                            <div class="dropdown-menu action">
+                                                    <a class="dropdown-item" href="#">View Profile</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Generate license</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+        
+                                                  </div>
+                                                </div>
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                        <td >Le Xuan Tan</td>
+                                        <td>1257982abc</td>
+                                        <td>0986878889</td>
+                                        <td>6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam</td>
+                                        <td>tanlx@acaziasoft.com</td>
+                                        <td>             
+                                                <div class="dropdown">  
+                                                        <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                                        <div class="dropdown-menu action">
+                                                                <a class="dropdown-item" href="#">View Profile</a>
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Generate license</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                    
+                                                              </div>
+                                                            </div>
+                                                </td>
+                                    </tr>
+                                    <tr>
+                                            <td >Le Xuan Tan</td>
+                                            <td>1257982abc</td>
+                                            <td>0986878889</td>
+                                            <td>6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam</td>
+                                            <td>tanlx@acaziasoft.com</td>
+                                            <td>              
+                                                    <div class="dropdown">  
+                                                            <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                                            <div class="dropdown-menu action">
+                                                                    <a class="dropdown-item" href="#">View Profile</a>
+                                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                                    <a class="dropdown-item" href="#">Generate license</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#">Delete</a>
+                        
+                                                                  </div>
+                                                                </div>
+                                                    </td>
+                                          </tr>
+                                          <tr>
+                                                <td >Le Xuan Tan</td>
+                                                <td>1257982abc</td>
+                                                <td>0986878889</td>
+                                                <td>6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam</td>
+                                                <td>tanlx@acaziasoft.com</td>
+                                                <td>              
+                                                        <div class="dropdown">  
+                                                                <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
+                                                                <div class="dropdown-menu action">
+                                                                        <a class="dropdown-item" href="#">View Profile</a>
+                                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                                        <a class="dropdown-item" href="#">Generate license</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a class="dropdown-item" href="#">Delete</a>
+                            
+                                                                      </div>
+                                                                    </div>
+                                                        </td>
+                                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    <div class="pagination-page-main">
+                            <ul class="pagination-numbers">
+                                <li><i class="fas fa-angle-left angle-pagination"></i></li>   
+                                    <li class="number-pagination-page"><a href="#">1</a></li>
+                                    <li class="number-pagination-page"><a href="#">2</a></li>
+                                    <li class="number-pagination-page"><a href="#">3</a></li>
+                                <li><i class="fas fa-angle-right angle-pagination"></i></li>   
+
+                                  </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The modalAddCustomer -->
+    <div id="mymodalAddCustomer" class="modalAddCustomer modal-template">
+      <!-- modalAddCustomer content -->
+      <div class="modalAddCustomer-content modal-template-content">
+        <div class="modalAddCustomer-header modal-header-template">
+          <h2>CUSTOMER ADD</h2>
+        </div>
+        <div class="modalAddCustomer-input">
+          <div class="element-input-add-customer">
+            <label for="iac1"> Name</label>
+            <input type="text" class="input-add-customer" id="iac1" placeholder="Name">
+          </div>
+          <div class="element-input-add-customer">
+            <label for="iac2">Phone number</label>
+            <input type="text" class="input-add-customer" id="iac2" placeholder="Phone number">
+          </div>
+          <div class="element-input-add-customer">
+            <label for="iac3">Address</label>
+            <input type="text" class="input-add-customer" id="iac3" placeholder="Address">
+          </div>
+          <div class="element-input-add-customer">
+            <label for="iac4">Email</label>
+            <input type="text" class="input-add-customer" id="iac4" placeholder="Email">
+          </div>
+        </div>
+        <div class="modalAddCustomer-btn modal-btn">
+          <button class="btn-add-customer element-btn-modal">Confirm</button>
+          <button class="btn-add-customer element-btn-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+  <!-- The modalCustomerDetail -->
+  <div id="mymodalCustomerDetail" class="modalCustomerDetail modal-template">
+    <!-- modalCustomerDetail content -->
+    <div class="modalCustomerDetail-content modal-template-content">
+      <div class="modalCustomerDetail-header">
+        <h2>CUSTOMER </h2>
+      </div>
+    </div>
+  </div>
+  
+<script src="modalCustomer.js"></script>
+</body>
+
+</html>
