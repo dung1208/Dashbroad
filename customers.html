@@ -14,6 +14,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Date picker-->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
 
@@ -103,9 +106,9 @@
                                      <div class="dropdown">  
                                     <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                     <div class="dropdown-menu action">
-                                            <a class="dropdown-item" href="#" >View Profile</a>
-                                            <a class="dropdown-item" href="#">Edit</a>
-                                            <a class="dropdown-item" href="#">Generate license</a>
+                                            <a class="dropdown-item btnViewProfile" href="#" >View Profile</a>
+                                            <a class="dropdown-item btnEditCustomer" href="#">Edit</a>
+                                            <a class="dropdown-item btnGenerateLicense" href="#">Generate license</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item btnDelete" href="#">Delete</a>
 
@@ -123,9 +126,9 @@
                                                                              <div class="dropdown">  
                                             <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                             <div class="dropdown-menu action">
-                                                    <a class="dropdown-item" href="#">View Profile</a>
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Generate license</a>
+                                                    <a class="dropdown-item btnViewProfile" href="#">View Profile</a>
+                                                    <a class="dropdown-item btnEditCustomer" href="#">Edit</a>
+                                                    <a class="dropdown-item btnGenerateLicense" href="#">Generate license</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a class="dropdown-item btnDelete" href="#">Delete</a>
         
@@ -143,9 +146,9 @@
                                                 <div class="dropdown">  
                                                         <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                                         <div class="dropdown-menu action">
-                                                                <a class="dropdown-item" href="#">View Profile</a>
-                                                                <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Generate license</a>
+                                                                <a class="dropdown-item btnViewProfile" href="#">View Profile</a>
+                                                                <a class="dropdown-item btnEditCustomer" href="#">Edit</a>
+                                                                <a class="dropdown-item btnGenerateLicense" href="#">Generate license</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a class="dropdown-item btnDelete" href="#">Delete</a>
                     
@@ -163,9 +166,9 @@
                                                     <div class="dropdown">  
                                                             <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                                             <div class="dropdown-menu action">
-                                                                    <a class="dropdown-item" href="#">View Profile</a>
-                                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                                    <a class="dropdown-item" href="#">Generate license</a>
+                                                                    <a class="dropdown-item btnViewProfile" href="#">View Profile</a>
+                                                                    <a class="dropdown-item btnEditCustomer" href="#">Edit</a>
+                                                                    <a class="dropdown-item btnGenerateLicense" href="#">Generate license</a>
                                                                     <div class="dropdown-divider"></div>
                                                                     <a class="dropdown-item btnDelete" href="#">Delete</a>
                         
@@ -183,9 +186,9 @@
                                                         <div class="dropdown">  
                                                                 <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                                                 <div class="dropdown-menu action">
-                                                                        <a class="dropdown-item" href="#">View Profile</a>
-                                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                                        <a class="dropdown-item" href="#">Generate license</a>
+                                                                        <a class="dropdown-item btnViewProfile" href="#">View Profile</a>
+                                                                        <a class="dropdown-item btnEditCustomer" href="#">Edit</a>
+                                                                        <a class="dropdown-item btnGenerateLicense" href="#">Generate license</a>
                                                                         <div class="dropdown-divider"></div>
                                                                         <a class="dropdown-item btnDelete" href="#">Delete</a>
                             
@@ -273,6 +276,122 @@
       </div>
     </div>
     
+    <!-- The modalViewProfile -->
+    <div id="mymodalViewProfile" class="modalViewProfile modal-template">
+      <!-- modalAddCustomer content -->
+      <div class="modalViewProfile-content modal-template-content">
+        <div class="close-modal-template close-modalViewProfile">
+            <i class="far fa-times-circle closeViewProfile"></i>
+        </div>
+        <div class="modalViewProfile-header modal-header-template">
+          <h2>CUSTOMER DETAIL</h2>
+        </div>
+        <div class="table-detail-modalViewProfile">
+            <table>
+                <tr style="background-color: #E5E5E5;">
+                  <td>ID</td>
+                  <td>1257982abc</td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>Le Xuan Tan</td>
+                </tr>
+                <tr style="background-color: #E5E5E5;">
+                  <td>Phone number</td>
+                  <td>0986878889</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam</td>
+                </tr>
+                <tr style="background-color: #E5E5E5;">
+                  <td>Email</td>
+                  <td style="color:#0055FF">tanlx@acaziasoft.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="nav-modal-template nav-modalViewProfile">
+          <div class="icon-nav-modal-template icon-nav-modalViewProfile icon-nav-modal-template-selected">
+              <i class="fas fa-lock"></i>
+          </div>
+           <div class="icon-nav-modal-template icon-nav-modalViewProfile icon-nav-modal-template-unselected">
+              <i class="far fa-edit"></i>
+          </div>
+           <div class="icon-nav-modal-template icon-nav-modalViewProfile icon-nav-modal-template-unselected">
+              <i class="far fa-trash-alt"></i>
+          </div>
+           <div class="icon-nav-modal-template icon-nav-modalViewProfile icon-nav-modal-template-unselected">
+              <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- The modalEditCustomer -->
+   <div id="mymodalEditCustomer" class="modalEditCustomer modal-template">
+    <!-- modalEditCustomer content -->
+    <div class="modalEditCustomer-content modal-template-content">
+      <div class="modalEditCustomer-header modal-header-template">
+        <h2>CUSTOMER EDIT</h2>
+      </div>
+      <div class="modalEditCustomer-input">
+        <div class="element-input-edit-customer">
+          <label for="iec1"> Name</label>
+          <input type="text" class="input-edit-customer" id="iec1" placeholder="Le Xuan Tan">
+        </div>
+        <div class="element-input-edit-customer">
+          <label for="iec2">Phone number</label>
+          <input type="text" class="input-edit-customer" id="iec2" placeholder="0986878889">
+        </div>
+        <div class="element-input-edit-customer">
+          <label for="iec3">Address</label>
+          <input type="text" class="input-edit-customer" id="iec3" placeholder="6th Floor Hong Ha Building, No57/56 Ngoc Lam St, Long Bien Dist, Ha Noi, Viet Nam">
+        </div>
+        <div class="element-input-edit-customer">
+          <label for="iec4">Email</label>
+          <input type="text" class="input-edit-customer" id="iec4" placeholder="tanlx@acaziasoft.com">
+        </div>
+      </div>
+      <div class="modalEditCustomer-btn modal-btn">
+        <button class="btn-edit-customer element-btn-modal">Save</button>
+        <button class="btn-edit-customer element-btn-modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- The modalGenerateLicense -->
+    <div id="mymodalGenerateLicense" class="modalGenerateLicense modal-template">
+      <!-- modalGenerateLicense content -->
+      <div class="modalGenerateLicense-content modal-template-content">
+        <div class="modalGenerateLicense-header modal-header-template">
+          <h2>GENARATE LICENSE</h2>
+        </div>
+        <div class="element-modalGenerate-license">
+            <div class="modalGenerateLicense-left">
+                  <span>License key:</span>
+                  <span>Purchased Date:</span>
+                  <span>License Term:</span>
+                  <span>Expiration Date:</span>
+                  <span>Email:</span>
+            </div>
+            <div class="modalGenerateLicense-right">
+              <span class="element-modalGenerateLicense-right license-key-modalGenerateLicense" >66aa7523flaa0d5fa99806967868e4cd</span>
+              <input class="element-modalGenerateLicense-right" id="datepicker" width="200" />
+              <div class="checkbox-license-term element-modalGenerateLicense-right">
+                 <label for="igl1"><input type="radio" name="licenseTerm" id="igl1" checked>  6 months</label> 
+                 <label for="igl2"><input type="radio" name="licenseTerm" id="igl2">  12 months</label> 
+                 <label for="igl3"><input type="radio" name="licenseTerm" id="igl3">  24 months</label> 
+              </div>
+              <span class="element-modalGenerateLicense-right">July 31,2019</span>
+              <span style="color: #0055FF;" class="element-modalGenerateLicense-right">tanlx@acaziasoft.com</span>
+            </div>
+        </div>
+        <div class="modalGenerateLicense-btn modal-btn">
+          <button class="btn-add-license element-btn-modal">Confirm</button>
+          <button class="btn-add-license element-btn-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
 <script src="modalCustomer.js"></script>
 </body>
 

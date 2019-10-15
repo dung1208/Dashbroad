@@ -111,10 +111,10 @@
                                      <div class="dropdown">  
                                     <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                     <div class="dropdown-menu action">
-                                            <a class="dropdown-item" href="#">View Licenses</a>
+                                            <a class="dropdown-item btnViewLicenses" href="#">View Licenses</a>
                                             <a class="dropdown-item" href="#">Re-New</a>
                                             <a class="dropdown-item" href="#">Edit</a>
-                                            <a class="dropdown-item" href="#">Disable</a>
+                                            <a class="dropdown-item btnDisable" href="#">Disable</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item btnDelete" href="#">Delete</a>
 
@@ -132,10 +132,10 @@
                                     <td>                <div class="dropdown">  
                                             <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                             <div class="dropdown-menu action">
-                                                    <a class="dropdown-item" href="#">View Licenses</a>
+                                                    <a class="dropdown-item btnViewLicenses" href="#">View Licenses</a>
                                                     <a class="dropdown-item" href="#">Re-New</a>
                                                     <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Disable</a>
+                                                    <a class="dropdown-item btnDisable" href="#">Disable</a>
                                                     <div class="dropdown-divider"></div>
                                                     <a class="dropdown-item btnDelete" href="#">Delete</a>
         
@@ -153,10 +153,10 @@
                                         <td>                <div class="dropdown">  
                                                 <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                                 <div class="dropdown-menu action">
-                                                        <a class="dropdown-item" href="#">View Licenses</a>
+                                                        <a class="dropdown-item btnViewLicenses" href="#">View Licenses</a>
                                                         <a class="dropdown-item" href="#">Re-New</a>
                                                         <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Disable</a>
+                                                        <a class="dropdown-item btnDisable" href="#">Disable</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a class="dropdown-item btnDelete" href="#">Delete</a>
             
@@ -174,10 +174,10 @@
                                             <td>                <div class="dropdown">  
                                                     <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                                     <div class="dropdown-menu action">
-                                                            <a class="dropdown-item" href="#">View Licenses</a>
+                                                            <a class="dropdown-item btnViewLicenses" href="#">View Licenses</a>
                                                             <a class="dropdown-item" href="#">Re-New</a>
                                                             <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Disable</a>
+                                                            <a class="dropdown-item btnDisable" href="#">Disable</a>
                                                             <div class="dropdown-divider"></div>
                                                             <a class="dropdown-item btnDelete" href="#">Delete</a>
                 
@@ -195,10 +195,10 @@
                                                 <td>                <div class="dropdown">  
                                                         <i class="fas fa-ellipsis-h action-table"  data-toggle="dropdown"></i>  
                                                         <div class="dropdown-menu action">
-                                                                <a class="dropdown-item" href="#">View Licenses</a>
+                                                                <a class="dropdown-item btnViewLicenses" href="#">View Licenses</a>
                                                                 <a class="dropdown-item" href="#">Re-New</a>
                                                                 <a class="dropdown-item" href="#">Edit</a>
-                                                                <a class="dropdown-item" href="#">Disable</a>
+                                                                <a class="dropdown-item btnDisable" href="#">Disable</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a class="dropdown-item btnDelete" href="#">Delete</a>
                     
@@ -284,6 +284,112 @@
     </div>
   </div>
 
+ <!-- The modalViewLicenses -->
+ <div id="mymodalViewLicenses" class="modalViewLicenses modal-template">
+    <!-- modalAddCustomer content -->
+    <div class="modalViewLicenses-content modal-template-content">
+      <div class="close-modal-template close-modalViewLicenses">
+          <i class="far fa-times-circle closeViewLicenses"></i>
+      </div>
+      <div class="modalViewLicenses-header modal-header-template">
+        <h2>LICENSE DETAIL</h2>
+      </div>
+      <div class="table-detail-modalViewLicenses">
+          <table>
+              <tr style="background-color: #E5E5E5;">
+                <td>License Key:</td>
+                <td>66aa7523flaa0d5fa99806967868e4cd</td>
+              </tr>
+              <tr>
+                <td>Purchased Date:</td>
+                <td style="color: #0055FF;">Jan 31,2019</td>
+              </tr>
+              <tr style="background-color: #E5E5E5;">
+                <td>Expriration Date:</td>
+                <td>Jan 31,2020</td>
+              </tr>
+              <tr>
+                <td>License Term:</td>
+                <td>1 year</td>
+              </tr>
+              <tr style="background-color: #E5E5E5;">
+                <td>Status:</td>
+                <td>inactive<i class="fas fa-question-circle icon-question"></i></td>
+              </tr>
+              <tr>
+                <td>Customer:</td>
+                <td style="color: #0055FF;">Tan Le</td>
+              </tr>
+              <tr style="background-color: #E5E5E5;">
+                <td>Actions:</td>
+                <td>
+                  <ul class="action-table-modalViewLicenses">
+                    <li>Send Reneway Notice</li>
+                    <li>Active</li>
+                    <li>Extend</li>
+                    <li>Disable</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>
+      </div>
+      <div class="payment-modalViewLicenses">
+        <div class="title-payment-modalViewLicenses">
+          <h3>Related Payment <i class="fas fa-question-circle icon-question"></i></h3>
+        </div>
+        <div class="table-payment-modalViewLicense">
+          <table>
+            <tr  style="background-color: #E5E5E5;">
+              <td>No</td>
+              <td>Amount</td>
+              <td>Date</td>
+              <td>Status</td>
+              <td>Action</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>$10.00</td>
+              <td>Jan 31,2020</td>
+              <td>Complete</td>
+              <td><i class="fas fa-ellipsis-h action-table"></i></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="nav-modal-template nav-modalViewLicenses">
+        <div class="icon-nav-modal-template icon-nav-modalViewLicenses icon-nav-modal-template-selected">
+            <i class="fas fa-lock"></i>
+        </div>
+         <div class="icon-nav-modal-template icon-nav-modalViewLicenses icon-nav-modal-template-unselected">
+            <i class="far fa-edit"></i>
+        </div>
+         <div class="icon-nav-modal-template icon-nav-modalViewLicenses icon-nav-modal-template-unselected">
+            <i class="far fa-trash-alt"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- The modalDisable -->
+    <div id="mymodalDisable" class="modalDisable modal-template">
+      <!-- modalDelete content -->
+      <div class="modalDisable-content modal-template-content">
+        <div class="modalDisable-header ">
+              <div>
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+          <h2>Are You Sure?</h2>
+        </div>
+        <div class="text-modalDisable">
+            <p>Are you sure want to disable this film? You will be</p>
+            <p>able to undo this in the actions section.</p>
+        </div>
+        <div class="modal-btn">
+              <button class="element-btn-modal">Confirm</button>
+              <button class="element-btn-modal">Cancel</button>
+            </div>
+      </div>
+    </div>
     <script src="modalLicense.js"></script>
 </body>
 
