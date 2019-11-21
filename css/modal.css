@@ -84,11 +84,12 @@
 }
 
    /* modalAddCustomer */
+
   .modalAddCustomer{
     padding-top: 146px;
   }
   .modalAddCustomer-content{
-    width: 911px;
+    width: 60%;
     height: 789px;
   }
 
@@ -142,7 +143,7 @@
   padding-top: 146px;
 }
 .modalEditCustomer-content{
-  width: 911px;
+  width: 60%;
   height: 789px;
 }
 
@@ -179,7 +180,7 @@ padding-bottom: 40px;
     padding-top: 203px;
   }
   .modalAddLicense-content{
-    width: 1086px;
+    width: 80%;
     height: 650px;
   }
 .element-modalAdd-license{
@@ -227,7 +228,7 @@ padding-bottom: 40px;
 
 /* modal delete*/
 .modalDelete{
-  padding-top: 280px;
+  padding-top: 8%;
 }
 .modalDelete-content{
   height: 520px;
@@ -262,7 +263,7 @@ padding-bottom: 40px;
 
 /* modal view profile */
 .modalViewProfile{
-  padding-top: 215px;
+  padding-top: 5%;
 }
 .modalViewProfile-content{
   height: 650px;
@@ -287,10 +288,10 @@ padding-bottom: 40px;
 }
 .modalViewLicenses-content{
   height: 857px;
-  width: 1432px;
+  width: 80%;
 }
 .table-detail-modalViewLicenses>table{
-  width: 1328px;
+  width: 92%;
   height: 441px;
   margin-left: 50px;
   font-size: 20px;
@@ -335,7 +336,7 @@ padding-bottom: 40px;
 }
 
 .table-payment-modalViewLicense>table{
-  width: 1328px;
+  width: 92%;
   font-size: 24px;
   margin-top: 30px;
 }
@@ -349,7 +350,7 @@ padding-bottom: 40px;
 /* modal generate license*/
  
 .modalGenerateLicense{
-  padding-top: 203px;
+  padding-top: 5%;
 }
 .modalGenerateLicense-content{
   width: 1086px;
@@ -393,7 +394,7 @@ cursor: pointer;
 
 /* modal disable*/
 .modalDisable{
-  padding-top: 280px;
+  padding-top: 5%;
 }
 .modalDisable-content{
   height: 520px;
