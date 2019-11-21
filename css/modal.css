@@ -267,11 +267,11 @@ padding-bottom: 40px;
 }
 .modalViewProfile-content{
   height: 650px;
-  width: 1086px;
+  width: 80%;
 }
 .table-detail-modalViewProfile>table{
   height: 400px;
-  width: 970px;
+  width: 90%;
   margin-left: 58px;
   font-size: 20px;
   margin-top: 30px;
@@ -302,8 +302,8 @@ padding-bottom: 40px;
 }
 .table-detail-modalViewLicenses>table>tbody>tr>td:first-child{
   font-weight: bold;
-  padding-left: 137px;
-  width: 590px;
+  padding-left: 12%;
+  width: 45%;
 }
 .action-table-modalViewLicenses{
   display: flex;
@@ -353,7 +353,7 @@ padding-bottom: 40px;
   padding-top: 5%;
 }
 .modalGenerateLicense-content{
-  width: 1086px;
+  width: 80%;
   height: 650px;
 }
 .element-modalGenerate-license{
@@ -363,7 +363,7 @@ padding-right: 100px;
 display: flex;
 }
 .modalGenerateLicense-left{
-width: 420px;
+width: 40%;
 display: flex;
 flex-direction: column;
 }
